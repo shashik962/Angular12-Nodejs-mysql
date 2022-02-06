@@ -28,15 +28,6 @@ var connection = mysql.createConnection({
 
 
 
-
-
-
-
-
-
-
-
-
 var fileUpload = require('express-fileupload');
 var fs = require('fs');
 //const { response } = require("express");
@@ -69,7 +60,7 @@ app.get('/api/department',(request,response)=>{
 
 })
 
-
+ 
 app.post('/api/department',(request,response)=>{
 
     var query= `INSERT into department
